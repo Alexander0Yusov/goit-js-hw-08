@@ -39,6 +39,8 @@ function onSubmitFormHandler(e) {
   console.log('onSubmitFormHandler', getCurrentStorageData(STORAGE_KEY));
   localStorage.removeItem(STORAGE_KEY);
   e.currentTarget.reset();
+  initialDataObj.email = undefined;
+  initialDataObj.message = undefined;
 }
 
 // const ss = localStorage.getItem(STORAGE_KEY);
